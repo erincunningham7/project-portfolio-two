@@ -1,8 +1,58 @@
 body {
+    font-size: 80%;
     font-family: 'Bebas Neue', cursive;
     background-color: #ffbe0b;
 }
 
-.container {
-
+.heading {
+    margin-bottom: 50px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
 }
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dropbtn {
+    background-color: #ff006e;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    min-width: 200px;
+    background-color: #FF006E;
+    box-shadow: 0px 8px 16px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 12px 16px;
+  }
+
+  .dropdown-content > p {
+    color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
