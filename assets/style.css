@@ -8,7 +8,7 @@
     padding: 0;
 }
 body {
-    background-image: url('https://cdn.pixabay.com/photo/2017/07/21/23/57/concert-2527495_1280.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2015/10/12/20/45/confetti-985152_1280.jpg');
     font-size: 80%;
     font-family: 'Orbitron', cursive;
     color: white;
@@ -71,62 +71,8 @@ p {
     padding: 10px 0;
     font-family: 'Orbitron', sans-serif;
     width: 20%;
-    background-color: rgb(163, 163, 239);
+    background-color: rgb(248, 185, 68);
 }
 #submit-btn:hover {
     background-color: rgb(240, 122, 240);
-}
-
-
-  
-
-  
-
-.question-container {
-    width: 800px;
-    max-width: 80%;
-    background-color: #8338EC;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px 2px;
-}
-
-.btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-    margin: 20px 0;
-}
-
-.btn-trivia {
-    background-color: #FB5607;
-    border: 5px solid #3A86FF;
-    border-radius: 7px;
-    padding: 5px 10px;
-    color: white;
-    outline: none;
-}
-
-.btn-trivia:hover {
-    border-color: #ffbe0b;
-}
-
-.btn-correct {
-    background-color: rgb(50, 255, 50);
-}
-.btn-wrong {
-    background-color: red;
-}
-.next-btn {
-    font-size: 1.6rem;
-    font-weight: bold;
-    padding: 10px;
-}
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#hide {
-    display: none;
 }
