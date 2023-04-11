@@ -6,3 +6,4 @@
 [https://www.w3schools.com/css/css_text_shadow.asp]text shadow style
 [https://www.w3schools.com/cssref/pr_text_letter-spacing.php]letter spacing
 [https://www.w3schools.com/cssref/pr_dim_line-height.php]line height
+[https://stackoverflow.com/questions/37252041/storing-quiz-questions-in-array-of-objects]question js layout
