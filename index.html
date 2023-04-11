@@ -1,31 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Link to css-->
     <link rel="stylesheet" href="assets/style.css">
+    <!--Favicon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Pop Culture Quiz</title>
 </head>
+
 <body>
-    <h1 class="heading">Pop Culture Quiz</h1>
-    <div class="container">
-        <div class="flex">
-    <!--How to play dropdown button-->
-<div class="dropdown">
-    <button onclick="clickFunc()" class="dropbtn" type="button">How To Play</button>
-    <div id="myDropdown" class="dropdown-content">
-    <p>Are you a walking encyclopedia for useless celebrity information? Prove yourself with this pop culture trivia quiz! You will be given 10 random questions, with 30 seconds to answer each one. Good luck!</p>
+    <!--Header-->
+    <header>
+        <nav class="header-nav">
+            <div class="header-container">
+                <a href="index.html" aria-label="">
+                    <i class="fa-solid fa-house fa-bounce"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!--Game Intro-->
+    <div class="game-intro-flex">
+        <div class="game-intro">
+            <h1 class="heading">Pop Culture Quiz</h1>
+            <h2>A quiz about all things pop culture</h2>
+            <p>Are you a walking encyclopedia for useless celebrity information?<br> Prove yourself with this pop
+                culture trivia quiz!<br> You will be given 10 random questions, with 30 seconds to answer each one.<br>
+            </p>
+            <p>Create your username & good luck!</p>
+            <!--Username form-->
+            <form class="username-form">
+                <input type="text" name="username" class="username" placeholder="Enter username" required>
+                <input class="btn" type="submit" id="submit-btn" value="Let's Go!">
+            </form>
+        </div>
     </div>
-</div>
-    <!--Play button-->
-    <a class="btn" href="">Play</a>
-    <!--Score button-->
+    <!--Play button
+    <button id="play-btn">Play</button>
+    <div class="question-container" id="hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn-trivia">Answer 1</button>
+            <button class="btn-trivia">Answer 2</button>
+            <button class="btn-trivia">Answer 3</button>
+            <button class="btn-trivia">Answer 4</button>
+            <div class="controls">
+                <button id="next-btn" class="next-btn">Next</button>
+            </div>
+        </div>
+
+
+        Questions and answers>
+        <h2 id="question"></h2>
+
+    </div>
+    Score button>
     <A class="btn" href="">Score</A>
-</div>
-</div>
+
+    </div-->
     <!--Javscript link-->
- <script src="assets/script.js"></script>   
+    <footer></footer>
+    <script src="assets/script.js"></script>
 </body>
+
 </html>

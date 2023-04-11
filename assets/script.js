@@ -1,3 +1,4 @@
+//Dropdown button function
 function clickFunc() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -12,4 +13,18 @@ window.onclick = function(event) {
         }
       }
     }
+  }
+
+  let playButton = document.getElementById("play-btn");
+  playButton.addEventListener('click', playGame);
+  let 
+  
+  function playGame() {
+playButton.classList.add('hide');
+  }
+  function nextQuestion() {
+
+  }
+  function answerChosen() {
+
   }
