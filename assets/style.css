@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
 }
-body {
+.home-body {
     background-image: url('https://cdn.pixabay.com/photo/2015/10/12/20/45/confetti-985152_1280.jpg');
     font-size: 80%;
     font-family: 'Orbitron', cursive;
@@ -53,6 +53,7 @@ p {
     font-size: 20px;
     letter-spacing: 3px;
     line-height: 1.6;
+    -webkit-background-composite: border;
 }
 /*Username input button*/
 .username-form {
@@ -60,6 +61,7 @@ p {
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
 .username {
     margin: 10px 0;
     padding: 10px 0;
@@ -75,4 +77,13 @@ p {
 }
 #submit-btn:hover {
     background-color: rgb(240, 122, 240);
+}
+
+/*Quiz page*/
+
+.quiz-body {
+    background-color: purple;
+    font-size: 80%;
+    font-family: 'Orbitron', cursive;
+    color: white;
 }
