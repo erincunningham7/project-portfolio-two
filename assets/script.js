@@ -190,6 +190,142 @@ function restart() {
     userScore.innerHTML = score;
     startQuiz();
 }
+ 
+function next () {
+    currentQuestion++;
+    if(currentQuestion>=9){
+        nextBtn.classList.add('hide');
+        prevBtn.classList.remove('hide');
+    }
+    questionText.innerHTML = questions[currentQuestion].question;
+    answerOne.innerHTML = questions[currentQuestion].answers[0].option;
+    answerOne.onclick = () => {
+        let ans = 0;
+        if (questions[currentQuestion].answers[ans].answer){
+            if(score<10) {
+                score++;
+            }
+        }
+        userScore.innerHTML = score;
+        if (currentQuestion<9){
+            next();
+        }
+    } 
+    answerTwo.innerHTML = questions[currentQuestion].answers[1].option;
+    answerTwo.onclick = () => {
+        let ans = 1;
+        if (questions[currentQuestion].answers[ans].answer){
+            if(score<10) {
+                score++;
+            }
+        }
+        userScore.innerHTML = score;
+        if (currentQuestion<9){
+            next();
+        }
+    }
+    answerThree.innerHTML = questions[currentQuestion].answers[2].option;
+    answerThree.onclick = () => {
+        let ans = 2;
+        if (questions[currentQuestion].answers[ans].answer){
+            if(score<10) {
+                score++;
+            }
+        }
+        userScore.innerHTML = score;
+        if (currentQuestion<9){
+            next();
+        }
+    }
+    answerFour.innerHTML = questions[currentQuestion].answers[3].option;
+    answerFour.onclick = () => {
+        let ans = 3;
+        if (questions[currentQuestion].answers[ans].answer){
+            if(score<10) {
+                score++;
+            }
+        }
+        userScore.innerHTML = score;
+        if (currentQuestion<9){
+            next();
+        }
+    }
+    prevBtn.classList.add('hide');
+}
+
+function previous () {
+    currentQuestion--;
+    if(currentQuestion<=0){
+        nextBtn.classList.add('hide');
+        prevBtn.classList.remove('hide');
+    }
+    questionText.innerHTML = questions[currentQuestion].question;
+    answerOne.innerHTML = questions[currentQuestion].answers[0].option;
+    answerOne.onclick = () => {
+        let ans = 0;
+        if (questions[currentQuestion].answers[ans].answer){
+            if(score<10) {
+                score++;
+            }
+        }
+        userScore.innerHTML = score;
+        if (currentQuestion<9){
+            next();
+        }
+    } 
+    answerTwo.innerHTML = questions[currentQuestion].answers[1].option;
+    answerTwo.onclick = () => {
+        let ans = 1;
+        if (questions[currentQuestion].answers[ans].answer){
+            if(score<10) {
+                score++;
+            }
+        }
+        userScore.innerHTML = score;
+        if (currentQuestion<9){
+            next();
+        }
+    }
+    answerThree.innerHTML = questions[currentQuestion].answers[2].option;
+    answerThree.onclick = () => {
+        let ans = 2;
+        if (questions[currentQuestion].answers[ans].answer){
+            if(score<10) {
+                score++;
+            }
+        }
+        userScore.innerHTML = score;
+        if (currentQuestion<9){
+            next();
+        }
+    }
+    answerFour.innerHTML = questions[currentQuestion].answers[3].option;
+    answerFour.onclick = () => {
+        let ans = 3;
+        if (questions[currentQuestion].answers[ans].answer){
+            if(score<10) {
+                score++;
+            }
+        }
+        userScore.innerHTML = score;
+        if (currentQuestion<9){
+            next();
+        }
+    }
+    nextBtn.classList.remove('hide');
+    }
+
+    function submit() {
+        prevBtn.classList.add('hide');
+        nextBtn.classList.add('hide');
+        submitBtn.classList.add('hide');
+        answerOne.classList.add('hide');
+        answerTwo.classList.add('hide');
+        answerThree.classList.add('hide');
+        answerFour.classList.add('hide');
+        questionText.innerHTML = "Congratulations you have completed the quiz!";
+    }
+
 
 
   

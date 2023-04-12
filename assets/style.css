@@ -8,28 +8,34 @@
     padding: 0;
 }
 .home-body {
-    background: linear-gradient(to bottom, #ff00ff 0%, #ffff00 100%);
+    background: linear-gradient(to right, #3a86ff 0%, #660066 100%);
     font-size: 80%;
     font-family: 'Orbitron', cursive;
     color: white;
 }
-/*Header*/
-.header-nav {
-    height: 50px;
-}
-.header-container {
-    margin: 0 auto;
-    padding: 0 30px;
-}
 
 /*Game intro*/
-.game-intro-flex, .game-intro {
-    width: 100%;
+.game-intro-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
 }
 .game-intro {
-   /* border: solid 5px white;
-    border-style: outset;*/
+    width: 80vw;
+    max-width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #FFBE0B;
+    box-shadow: 0 0 5px 5px;
+    border-radius: center;
+    margin-top: 40px;
 }
 h1 {
     text-shadow: 2px 2px 5px blue;
@@ -46,6 +52,7 @@ p {
     margin: 10px auto;
     text-shadow: 2px 2px 5px blue;
     font-size: 20px;
+    font-weight: bold;
     letter-spacing: 3px;
     line-height: 1.6;
     -webkit-background-composite: border;
@@ -61,24 +68,22 @@ p {
     margin: 10px 0;
     padding: 10px 0;
     font-family: 'Orbitron', sans-serif;
-    width: 40%;
 }
 #submit-btn {
-    margin: 10px 0;
-    padding: 10px 0;
+    margin: 10px;
+    padding: 10px;
     font-family: 'Orbitron', sans-serif;
-    width: 20%;
-    background-color: rgb(248, 185, 68);
+    background-color: #FF006E;
     cursor: grab;
 }
 #submit-btn:hover {
-    background-color: rgb(240, 122, 240);
+    background-color: #8338EC;
 }
 
 /*Quiz page*/
 
 .quiz-body {
-    background: linear-gradient(to left, #0000ff 0%, #ff6600 100%);
+    background: linear-gradient(to right, #ffbe0b 0%, #ff006e 100%);
     font-size: 80%;
     font-family: 'Orbitron', cursive;
     color: white;
@@ -95,12 +100,14 @@ p {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    background-color: dodgerblue;
+    background-color: #8338EC;
     box-shadow: 0 0 5px 5px;
     border-radius: center;
+    margin-top: 40px;
 }
 
 .quiz-score {
+    margin-top: 30px;
     font-size: larger;
 }
 #question-container {
@@ -108,6 +115,16 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#question-text {
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(255, 6, 164);
+    box-shadow: 3px 3px 5px orange;
+    font-family: 'Orbitron', cursive;
+    margin: 20px;
+    padding: 20px; 
 }
 
 .btn {
