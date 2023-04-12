@@ -7,3 +7,4 @@
 [https://stackoverflow.com/questions/37252041/storing-quiz-questions-in-array-of-objects]question js layout
 [https://www.w3schools.com/colors/colors_gradient.asp]colour gradient
 [https://coolors.co/palette/ffbe0b-fb5607-ff006e-8338ec-3a86ff]colour palette
+[https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz]timer

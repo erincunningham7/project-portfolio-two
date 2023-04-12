@@ -1,3 +1,6 @@
+//
+
+
 const userScore = document.getElementById('user-score');
 const questionText = document.getElementById('question-text');
 const restartBtn = document.getElementById('restart');
@@ -325,6 +328,18 @@ function previous () {
         answerFour.classList.add('hide');
         questionText.innerHTML = "Congratulations you have completed the quiz!";
     }
+let count = 60;
+let interval = setInterval(function(){
+  document.getElementById('count').innerHTML=count;
+  count--;
+  questionsCount++;
+  if (count === 0){
+    clearInterval(interval);
+    document.getElementById('count').innerHTML="Done";
+    alert("You're out of time!");
+  }
+}, 1000);
+    
 
 
 
