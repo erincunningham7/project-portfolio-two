@@ -9,6 +9,11 @@ const answerTwo = document.getElementById('answer-two');
 const answerThree = document.getElementById('answer-three');
 const answerFour = document.getElementById('answer-four');
 
+restartBtn.addEventListener('click', restart);
+prevBtn.addEventListener('click', previous);
+nextBtn.addEventListener('click', next);
+submitBtn.addEventListener('click', submit);
+
 let questions = [{
     question: "How many kids does Angelina Jolie have?",
     answers: [
@@ -112,6 +117,79 @@ let questions = [{
 
 let currentQuestion = 0;
 let score = 0;
+
+function startQuiz () {
+    currentQuestion = 0;
+    questionText.innerHTML = questions[currentQuestion].question;
+    answerOne.innerHTML = questions[currentQuestion].answers[0].option;
+    answerOne.onclick = () => {
+        let ans = 0;
+        if (questions[currentQuestion].answers[ans].answer){
+            if(score<10) {
+                score++;
+            }
+        }
+        userScore.innerHTML = score;
+        if (currentQuestion<9){
+            next();
+        }
+    } 
+    answerTwo.innerHTML = questions[currentQuestion].answers[1].option;
+    answerTwo.onclick = () => {
+        let ans = 1;
+        if (questions[currentQuestion].answers[ans].answer){
+            if(score<10) {
+                score++;
+            }
+        }
+        userScore.innerHTML = score;
+        if (currentQuestion<9){
+            next();
+        }
+    }
+    answerThree.innerHTML = questions[currentQuestion].answers[2].option;
+    answerThree.onclick = () => {
+        let ans = 2;
+        if (questions[currentQuestion].answers[ans].answer){
+            if(score<10) {
+                score++;
+            }
+        }
+        userScore.innerHTML = score;
+        if (currentQuestion<9){
+            next();
+        }
+    }
+    answerFour.innerHTML = questions[currentQuestion].answers[3].option;
+    answerFour.onclick = () => {
+        let ans = 3;
+        if (questions[currentQuestion].answers[ans].answer){
+            if(score<10) {
+                score++;
+            }
+        }
+        userScore.innerHTML = score;
+        if (currentQuestion<9){
+            next();
+        }
+    }
+    prevBtn.classList.add('hide');
+}
+startQuiz();
+
+function restart() {
+    currentQuestion = 0;
+    prevBtn.classList.remove('hide');
+    nextBtn.classList.remove('hide');
+    submitBtn.classList.remove('hide');
+    answerOne.classList.remove('hide');
+    answerTwo.classList.remove('hide');
+    answerThree.classList.remove('hide');
+    answerFour.classList.remove('hide');
+    score = 0;
+    userScore.innerHTML = score;
+    startQuiz();
+}
 
 
   
