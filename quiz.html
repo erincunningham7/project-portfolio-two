@@ -27,15 +27,26 @@
 
     <body class="quiz-body">
         <div class="quiz-container">
-            <div id="question-container" class="hidden">
-<div class="controls">
-    <button id="home" class="home-btn btn" onclick="location.href='index.html'">Home</button>
-    <button id="next" class="next-btn btn hide">Next</button>
-    <button id="submit" class="submit-btn btn hide">Submit Quiz</button>
-<div id="results"></div>
-</div>
+            <div class="quiz-score">
+                <span id="user-score">0</span>
+                <span id="total-score">/ 10</span>
+                </div>
+            <div id="question-container" class="content">
+                <div id="question-text"></div>
+            <div class="options">
+                <button class="btn btn-option" id="answer-one"></button>
+                <button class="btn btn-option" id="answer-one"></button>
+                <button class="btn btn-option" id="answer-one"></button>
+                <button class="btn btn-option" id="answer-one"></button>
             </div>
-        </div>
+            </div>
+            <div class="controls">
+                <button class="btn btn-restart" id="restart">Restart</button>
+                <button class="btn btn-prev" id="previous">Previous</button>
+                <button class="btn btn-next" id="next">Next</button>
+                <button class="btn btn-submit" id="submit">Submit
+            </div>
+            </div>
         
         <!--Javscript link-->
         <script src="assets/questions.js"></script>
