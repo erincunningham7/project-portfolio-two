@@ -1,7 +1,7 @@
 //
 
 
-const userScore = document.getElementById('user-score');
+let userScore = document.getElementById('user-score');
 const questionText = document.getElementById('question-text');
 const restartBtn = document.getElementById('restart');
 const prevBtn = document.getElementById('previous');
@@ -328,7 +328,7 @@ function previous () {
         answerFour.classList.add('hide');
         questionText.innerHTML = "Congratulations you have completed the quiz!";
     }
-let count = 60;
+/*let count = 60;
 let interval = setInterval(function(){
   document.getElementById('count').innerHTML=count;
   count--;
@@ -338,7 +338,24 @@ let interval = setInterval(function(){
     document.getElementById('count').innerHTML="Done";
     alert("You're out of time!");
   }
-}, 1000);
+}, 1000);*/
+
+function startTimer(duration, display) {
+    let timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        display.textContent = minutes + ":" + seconds;
+        if (--timer < 0) {
+            timer = duration;
+            display.textContent = "Oh no! You have run out of time!";
+        }
+    }, 1000)
+}
+
+startTimer(60, document.querySelector("#count"));
     
 
 
