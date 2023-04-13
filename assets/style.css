@@ -107,7 +107,7 @@ p {
 }
 
 .quiz-score {
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: larger;
 }
 #question-container {
@@ -122,7 +122,7 @@ p {
     font-weight: bold;
     box-shadow: 3px 3px 5px blue;
     font-family: 'Orbitron', cursive;
-    margin: 20px;
+    margin: 20px 0 0;
     padding: 20px; 
     color: black;
     background-color: white;
