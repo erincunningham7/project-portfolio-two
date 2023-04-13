@@ -157,6 +157,7 @@ p {
     display: none;
 }
 
-footer {
-    
+#count {
+    margin: 20px 0;
 }
+  
