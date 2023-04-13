@@ -449,6 +449,11 @@ function previous() {
     nextBtn.classList.remove('hide');
 }
 
+const form = document.getElementById("user-form");
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+})
+
 function submit() {
     prevBtn.classList.add('hide');
     nextBtn.classList.add('hide');

@@ -50,7 +50,8 @@ h2 {
 }
 p {
     margin: 10px auto;
-    text-shadow: 5px 4px 5px blue;
+    color: blue;
+    text-shadow: 5px 4px 5px white;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -70,6 +71,7 @@ p {
     font-family: 'Orbitron', sans-serif;
 }
 #submit-btn {
+    text-shadow: 2px 2px 2px white;
     margin: 10px;
     padding: 10px;
     font-family: 'Orbitron', sans-serif;
