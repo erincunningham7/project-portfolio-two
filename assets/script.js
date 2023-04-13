@@ -11,7 +11,6 @@ const answerOne = document.getElementById('answer-one');
 const answerTwo = document.getElementById('answer-two');
 const answerThree = document.getElementById('answer-three');
 const answerFour = document.getElementById('answer-four');
-const timer = document.getElementById('count');
 
 restartBtn.addEventListener('click', restart);
 prevBtn.addEventListener('click', previous);
@@ -304,14 +303,13 @@ function startTimer(duration, display) {
             timer = duration;
             display.textContent = "Oh no! You have run out of time!";
         }
-    }, 1000)
+    }, 1000);
+    function endTimer() {
+        clearInterval(startTimer());
+    }
 }
 
 startTimer(60, document.querySelector("#count"));
-
-function endTimer() {
-    clearTimeout(startTimer());
-}
 
 function restart() {
     currentQuestion = 0;
@@ -461,5 +459,4 @@ function submit() {
     answerFour.classList.add('hide');
     questionText.innerHTML = "Congratulations you have completed the quiz!";
     userScore.innerHTML = `You scored ${score}`;
-    endTimer();
 }

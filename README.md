@@ -8,3 +8,4 @@
 [https://www.w3schools.com/colors/colors_gradient.asp]colour gradient
 [https://coolors.co/palette/ffbe0b-fb5607-ff006e-8338ec-3a86ff]colour palette
 [https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz]timer
+[https://www.w3schools.com/js/js_timing.asp#:~:text=The%20setInterval%20%28%29%20method%20repeats%20a%20given%20function,the%20length%20of%20the%20time-interval%20between%20each%20execution.]timer setinterval
