@@ -327,6 +327,7 @@ function previous () {
         answerThree.classList.add('hide');
         answerFour.classList.add('hide');
         questionText.innerHTML = "Congratulations you have completed the quiz!";
+        userScore.innerHTML = `You scored ${score}`
     }
 /*let count = 60;
 let interval = setInterval(function(){
@@ -356,6 +357,7 @@ function startTimer(duration, display) {
 }
 
 startTimer(60, document.querySelector("#count"));
+
     
 
 
