@@ -322,7 +322,7 @@ function restart() {
     userScore.innerHTML = score;
     startQuiz();
 }
-//Function taht jumps to the next question
+//Function that jumps to the next question
 function next() {
     currentQuestion++;
     if (currentQuestion >= 9) {
@@ -463,3 +463,30 @@ function submit() {
     questionText.innerHTML = "Congratulations you have completed the quiz!";
     userScore.innerHTML = `You scored ${score}`;
 }
+//image func
+function createImage(src) {
+let image = document.createElement('img');
+image.src = src;
+return image;
+}
+
+function displayAnswerImages() {
+    let quizContainer = document.getElementById('quiz-container');
+    questions.forEach((question, index) => {
+        let answerContainer = document.createElement('div');
+        answerContainer.classList.add('answer-container');
+
+        question.answers.forEach(answer => {
+            let imageSrc = answer.answer ? 'images/correct.png' : 'images/incorrect.png';
+            let image = createImage(imageSrc);
+            let optionContainer = document.createElement('div');
+            optionContainer/classList.add('option-container');
+            optionContainer.appendChild(createTextNode(answer.option));
+            optionContainer.appendChild(image);
+
+            answerContainer.appendChild(optionContainer);
+    });
+    quizContainer.appendChild(answerContainer);
+    });
+}
+displayAnswerImages();
