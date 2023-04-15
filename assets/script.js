@@ -1,6 +1,4 @@
-//
-
-
+//Variables created to access the DOM
 let userScore = document.getElementById('user-score');
 const questionText = document.getElementById('question-text');
 const restartBtn = document.getElementById('restart');
@@ -11,12 +9,12 @@ const answerOne = document.getElementById('answer-one');
 const answerTwo = document.getElementById('answer-two');
 const answerThree = document.getElementById('answer-three');
 const answerFour = document.getElementById('answer-four');
-
+//Event listeners added to call particular functions when clicked
 restartBtn.addEventListener('click', restart);
 prevBtn.addEventListener('click', previous);
 nextBtn.addEventListener('click', next);
 submitBtn.addEventListener('click', submit);
-
+//Variable containing quiz questions and answers 
 let questions = [{
         question: "How many kids does Angelina Jolie have?",
         answers: [{
@@ -227,10 +225,10 @@ let questions = [{
         ]
     },
 ];
-
+//Counters for both scores and questions
 let currentQuestion = 0;
 let score = 0;
-
+//Function to execute quiz when the page loads
 function startQuiz() {
     currentQuestion = 0;
     questionText.innerHTML = questions[currentQuestion].question;
@@ -289,7 +287,7 @@ function startQuiz() {
     prevBtn.classList.add('hide');
 }
 startQuiz();
-
+//Function to display countdown timer
 function startTimer(duration, display) {
     let timer = duration,
         minutes, seconds;
@@ -310,7 +308,7 @@ function startTimer(duration, display) {
 }
 
 startTimer(60, document.querySelector("#count"));
-
+//Function that restarts the quiz
 function restart() {
     currentQuestion = 0;
     prevBtn.classList.remove('hide');
@@ -324,7 +322,7 @@ function restart() {
     userScore.innerHTML = score;
     startQuiz();
 }
-
+//Function taht jumps to the next question
 function next() {
     currentQuestion++;
     if (currentQuestion >= 9) {
@@ -386,7 +384,7 @@ function next() {
     }
     prevBtn.classList.add('hide');
 }
-
+//Function that jumps to the previous question
 function previous() {
     currentQuestion--;
     if (currentQuestion <= 0) {
@@ -448,7 +446,7 @@ function previous() {
     }
     nextBtn.classList.remove('hide');
 }
-
+//Submit function that shows the users score and congratulations message
 const form = document.getElementById("user-form");
 form.addEventListener('submit', (e) => {
     e.preventDefault();
