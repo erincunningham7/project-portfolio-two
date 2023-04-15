@@ -466,8 +466,8 @@ function submit() {
 //image func
 function createImage(src) {
 let image = document.createElement('img');
-image.src = src;
-return image;
+img.src = 'https://tse1.explicit.bing.net/th?id=OIP.IssytltEGTSmWbBTedheTwAAAA&pid=Api&P=0';
+document.body.appendChild(img);
 }
 
 function displayAnswerImages() {
