@@ -446,14 +446,13 @@ function previous() {
     }
     nextBtn.classList.remove('hide');
 }
-//Getting form value
-let user = document.getElementById('username');
-console.log('Username:', user.value);
-//Submit function that shows the users score and congratulations message
+//Form submission that shows the users score and congratulations message
 const form = document.getElementById("user-form");
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 })
+const user = document.getElementById('username');
+console.log(user.value);
 
 function submit() {
     prevBtn.classList.add('hide');
