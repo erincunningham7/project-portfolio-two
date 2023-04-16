@@ -33,7 +33,7 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    background-color: #FFBE0B;
+    background-color: black;
     box-shadow: 0 0 5px 5px;
     border-radius: center;
     margin-top: 40px;
@@ -44,20 +44,21 @@ h1 {
     margin: 10px 0 20px;
 }
 h2 {
-    text-shadow: 8px 2px 5px blue;
+    text-shadow: 8px 2px 5px greenyellow;
     font-size: 30px;
     margin: 10px 0 20px;
     letter-spacing: 2px;
 }
 p {
     margin: 10px auto;
-    color: blue;
-    text-shadow: 5px 4px 5px white;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 3px;
     line-height: 1.6;
     -webkit-background-composite: border;
+    color: #FFFFFF;
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+color: #FFFFFF;
 }
 /*Username input button*/
 .username-form {
