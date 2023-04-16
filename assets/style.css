@@ -80,7 +80,7 @@ text-shadow: 3px 2px 3px goldenrod;
     cursor: grab;
 }
 #submit-btn:hover {
-    background-color: red;
+    background-color: yellow;
 }
 
 /*Quiz page*/
@@ -156,6 +156,9 @@ text-shadow: 3px 2px 3px goldenrod;
 .controls {
     padding: 15px;
     order: 4;
+}
+.controls > button {
+    background-color: goldenrod;
 }
 
 .hide {

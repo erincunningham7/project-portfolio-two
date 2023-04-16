@@ -121,7 +121,7 @@ let questions = [{
     },
 
     {
-        question: "Real Housewives of Beverly Hills star Taylor Armstrong become a viral meme that depicted her screaming at what animal?",
+        question: "Real Housewives star Taylor Armstrong become a viral meme that depicted her screaming at what animal?",
         answers: [{
                 option: "Cat",
                 answer: true
@@ -493,3 +493,8 @@ function displayAnswerImages() {
     });
 }
 displayAnswerImages();
+//fix timer so it restarts with restart func and ends when submitted
+//fix image func
+//fix error with favicon
+//fix footer
+//fix prev button
