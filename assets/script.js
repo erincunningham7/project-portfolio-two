@@ -446,6 +446,9 @@ function previous() {
     }
     nextBtn.classList.remove('hide');
 }
+//Getting form value
+let user = document.getElementById('username');
+console.log('Username:', user.value);
 //Submit function that shows the users score and congratulations message
 const form = document.getElementById("user-form");
 form.addEventListener('submit', (e) => {
@@ -460,9 +463,10 @@ function submit() {
     answerTwo.classList.add('hide');
     answerThree.classList.add('hide');
     answerFour.classList.add('hide');
-    questionText.innerHTML = "Congratulations you have completed the quiz!";
+    questionText.innerHTML = `Congratulations ${user} you have completed the quiz!`;
     userScore.innerHTML = `You scored ${score}`;
 }
+
 //image func
 function createImage(src) {
 let image = document.createElement('img');
